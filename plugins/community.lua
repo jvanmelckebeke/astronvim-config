@@ -25,7 +25,13 @@ return {
  { import = "astrocommunity.completion.copilot-lua-cmp" },
 
 
- { import = "astrocommunity.split-and-window.windows-nvim" },
+ { import = "astrocommunity.split-and-window.windows-nvim",
+    config = {
+     filetypes = {
+      ["*"] = true
+     }
+    }
+},
  {
   "anuvyklack/windows.nvim",
   lazy = false,
